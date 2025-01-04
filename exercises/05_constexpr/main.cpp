@@ -18,7 +18,9 @@ int main(int argc, char **argv) {
 
     // TODO: 观察错误信息，修改一处，使代码编译运行
     // PS: 编译运行，但是不一定能算出结果……
-    constexpr auto ANS_N = 90;
+
+    //constexpr 在编译的时候就计算，有点类似宏，constexpr递归深度有什么限制？
+    constexpr auto ANS_N = 23;
     constexpr auto ANS = fibonacci(ANS_N);
     std::cout << "fibonacci(" << ANS_N << ") = " << ANS << std::endl;
 
