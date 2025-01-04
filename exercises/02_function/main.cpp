@@ -6,6 +6,8 @@
 
 // TODO: 在这里声明函数
 
+int add(int, int);
+
 int main(int argc, char **argv) {
     ASSERT(add(123, 456) == 123 + 456, "add(123, 456) should be 123 + 456");
 
